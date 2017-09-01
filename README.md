@@ -11,6 +11,7 @@ BruceCoreLib 整体介绍
 * 6.net                      okhttp3网络请求部分
 * 7.utils                    常用的工具类，banner首页轮播图片
 * 8.view                     常用的视图
+* 9.updateapk                更新apk 一.dialog方式 二.notification方式
 * 说明：使用见Explain类
 
 ## bruce下一些基本如何使用介绍
@@ -19,6 +20,8 @@ BruceCoreLib 整体介绍
 * 3.imagepick 选择图片  [选择图片](https://github.com/jeasonlzy/ImagePicker)
 * 4.database   暂时没有
 * 5.utils文件下的uploadhead上传头像封装  下载地址： [单个图片上传](https://github.com/wsy858/android-headimage-cliper)<br>
+* 6.updateapk 目录下dialog+nofication    更新Apk: [更新Apk](https://github.com/feicien/android-auto-update)<br>
+* RxJava方式更新apk  [RxJava方式更新apk](https://github.com/guoyoujin/MyUpdateApk)<br>
         不足:数据库还要封装一下<br>
 
 ## bruce 一些效果图 <br>

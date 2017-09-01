@@ -7,6 +7,7 @@ import android.net.Uri;
 import android.util.Log;
 import android.widget.ImageView;
 
+import com.bruce.core.updateapk.dialog.UpdateAppManager;
 import com.bruce.core.utils.uploadhead.UploadHeadExplain;
 
 import butterknife.InjectView;
@@ -20,6 +21,7 @@ public class MainActivity extends BaseActivity {
     ImageView image;
     int selectMode = 1;
     private static final int REQUEST_CODE = 10086;
+    private UpdateAppManager manager;
     /*
      * 初始化界面布局
      */
@@ -33,7 +35,8 @@ public class MainActivity extends BaseActivity {
      */
     @Override
     protected void initData() {
-
+        manager=new UpdateAppManager(this);
+        manager.getUpdateMsg();//检查更新
     }
 
     @OnClick(R.id.image)

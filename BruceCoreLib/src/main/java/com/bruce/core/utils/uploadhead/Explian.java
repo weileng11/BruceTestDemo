@@ -54,4 +54,29 @@ public class Explian {
 //                break;
 //        }
 //    }
+
+//    //此处后面可以将bitMap转为二进制上传后台网络
+//    //根据路径上传图片
+//    BaseNetEntity baseNetEntity = new BaseNetEntity();
+//                    baseNetEntity.uploadOneImg(cropImagePath, ServiceUrl.Upload_More_Pic, new Callback() {
+//        @Override
+//        public void onFailure(Call call, IOException e) {
+//
+//        }
+//
+//        @Override
+//        public void onResponse(Call call, Response response) throws IOException {
+//            //特别注意:response.body().string()只会被执行一次，在第一次必须要用string接收，否则
+//            //会出现null,坑了一波
+//            String str = response.body().string();
+//            //开始转换
+//            u = BaseNetEntity.JSONToObject(str, UploadPictureRespBean.class);
+////                            //设置图片参数
+////                            uploadSuccessPic.addAll(u.data.data);
+//            mHandler.postDelayed(mr, 1000);
+//            System.out.println("上传照片成功：response = " + u.data.data.get(0));
+//
+//        }
+//    });
+
 }
