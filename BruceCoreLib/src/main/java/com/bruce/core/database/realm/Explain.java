@@ -68,14 +68,14 @@ public class Explain {
 //
 //            userDao = new BaseRealmDao(this);
 //            try {
-//                userDao.deleteAll(Test.class);//先删除所有，以免demo出现主键已经存在的异常
+//                userDao.deleteAll(Explian.class);//先删除所有，以免demo出现主键已经存在的异常
 ////            userDao.deleteAll(User.class);//先删除所有，以免demo出现主键已经存在的异常
 //                User user = new User();
 //                user.setId(10);
 //                user.setName("小刺猬");
 //                user.setAge(22);
 //                user.setHasGrilFriend(true);
-//                Test test2 = new Test();
+//                Explian test2 = new Explian();
 //                test2.setMid(11);
 //                test2.setName("一座古城");
 //                RealmList<Test> tests=new RealmList<>();
@@ -83,7 +83,7 @@ public class Explain {
 //                user.setTest(tests);
 //                userDao.insert(user);
 //
-//                Test Explain = new Test();
+//                Explian Explain = new Explian();
 //                Explain.setMid(14);
 //                Explain.setName("一座古城");
 //                userDao.insert(Explain);

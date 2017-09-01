@@ -79,5 +79,7 @@ dependencies {
 //    compile 'com.lzy.widget:imagepicker:0.6.0'  //指定版本   要支持25.3.1（擦，我这没有，暂时不弄）
     compile 'com.github.chrisbanes.photoview:library:1.2.4'
     compile 'com.github.reactivesprint:rsandroid-recyclerview:0.3.3'
+    //上传单张照片  https://github.com/Joy-Whale/ImageSelector  暂时没有用到
+//    compile 'cn.joy:imageselector:1.0.1'
 
 }

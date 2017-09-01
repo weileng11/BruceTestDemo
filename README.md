@@ -18,7 +18,7 @@ BruceCoreLib 整体介绍
 * 2.banner 首页轮播  [首页轮播](https://github.com/youth5201314/banner)
 * 3.imagepick 选择图片  [选择图片](https://github.com/jeasonlzy/ImagePicker)
 * 4.database   暂时没有
-* 5.net    
+* 5.utils文件下的uploadhead上传头像封装  下载地址： [单个图片上传](https://github.com/wsy858/android-headimage-cliper)
         不足:数据库还要封装一下<br>
 
 ## bruce 一些效果图 <br>
