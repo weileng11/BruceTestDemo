@@ -1,5 +1,5 @@
 # BruceCoreLib 基本封装库开始
-=======
+====
 BruceCoreLib 整体介绍
 -------
 * 1.Base                     所有的activity，fragment都继承该类
