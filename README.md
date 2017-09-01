@@ -1,6 +1,7 @@
 # BruceCoreLib 基本封装库开始
-BruceCoreLib 整体介绍
 =======
+BruceCoreLib 整体介绍
+-------
 * 1.Base                     所有的activity，fragment都继承该类
 * 2.callback                 封装的接口类
 * 3.database                 一.greendao数据库封装，二.ormlite 数据库封装， 三.realm 数据库封装
@@ -10,7 +11,7 @@ BruceCoreLib 整体介绍
 * 7.utils                    常用的工具类，banner首页轮播图片
 * 8.view                     常用的视图
 * 说明：使用见Explain类
--------
+
 #bruce下一些基本如何使用介绍
 * 1.引导界面  [引导界面](https://github.com/bingoogolapple/BGABanner-Android#%E6%89%93%E8%B5%8F%E6%94%AF%E6%8C%81)
 * 2.banner 首页轮播  [首页轮播](https://github.com/youth5201314/banner)
