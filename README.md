@@ -21,6 +21,6 @@ BruceCoreLib 整体介绍
 -------
 ##bruce 一些效果图
 -------
-  ###引导页:
+ 引导页:
 ![引导页1](https://github.com/weileng11/BruceTestDemo/blob/master/img/yd1.png)
 ![引导页2](https://github.com/weileng11/BruceTestDemo/blob/master/img/yd2.png)
