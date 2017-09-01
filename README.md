@@ -17,10 +17,9 @@ BruceCoreLib 整体介绍
 * 3.imagepick 选择图片  [选择图片](https://github.com/jeasonlzy/ImagePicker)
 * 4.database   暂时没有
 * 5.net    
-        不足:数据库还要封装一下
-=======
-##bruce 一些效果图
- 引导页:
-=======
+        不足:数据库还要封装一下<br>
+
+##bruce 一些效果图 <br>
+引导页:<br>
 ![引导页1](https://github.com/weileng11/BruceTestDemo/blob/master/img/yd1.png)
 ![引导页2](https://github.com/weileng11/BruceTestDemo/blob/master/img/yd2.png)
