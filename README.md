@@ -27,7 +27,7 @@ BruceCoreLib 整体介绍
 ![引导页2](https://github.com/weileng11/BruceTestDemo/blob/master/img/yd2.png)
 
 
-```
+
 ## License
 
 ```
