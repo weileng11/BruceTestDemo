@@ -1,18 +1,18 @@
 # BruceCoreLib 基本封装库开始
 BruceCoreLib 整体介绍
 =======
-* 1.Base           所有的activity，fragment都继承该类
-* 2.callback       封装的接口类
-* 3.database      * 一.greendao数据库封装
-                  *二.ormlite 数据库封装
-                  *三.realm 数据库封装
-                  *说明：使用见Explain类
-* 4.dialog         常用的dialog类
-* 5.imagepicker    仿微信选择图片
-* 6.net            okhttp3网络请求部分
-* 7.utils          常用的工具类
-                   *banner 首页轮播图片
-*8.view           常用的视图
+* 1.Base                     所有的activity，fragment都继承该类
+* 2.callback                 封装的接口类
+* 3.database                * 一.greendao数据库封装
+                            * 二.ormlite 数据库封装
+                            * 三.realm 数据库封装
+                             说明：使用见Explain类
+* 4.dialog                   常用的dialog类
+* 5.imagepicker              仿微信选择图片
+* 6.net                      okhttp3网络请求部分
+* 7.utils                    常用的工具类
+                             banner 首页轮播图片
+* 8.view                     常用的视图
 
 -------
 #bruce下一些基本如何使用介绍
