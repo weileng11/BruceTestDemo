@@ -1,0 +1,12 @@
+在项目的根build.gradle的文件中添加:
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath "io.realm:realm-gradle-plugin:2.3.0"
+    }
+}
+然后在app的build.gradle文件中添加:
+
+apply plugin: 'realm-android'

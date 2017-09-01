@@ -1,0 +1,83 @@
+apply plugin: 'com.android.library'
+//realm+greendao数据库加入部分============================//
+apply plugin: 'realm-android'
+apply plugin: 'org.greenrobot.greendao'
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        //realm数据库
+        classpath 'io.realm:realm-gradle-plugin:1.1.0'
+        //greendao数据库
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.2.2'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+//GreenDao3配置
+greendao {
+    schemaVersion 1                             //版本号，升级时可配置
+//    daoPackage 'com.bruce.core.database.greendao.dao'        //包名,每次都要自己手动处理生成的类，有点麻烦
+//    targetGenDir'src/main/java/com/bruce/core/database/greendao/'                 //生成目录
+}
+
+//realm数据库加入部分============================//
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.Explain.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:24.0.0'
+    testCompile 'junit:junit:4.12'
+
+    //注入
+    compile 'com.jakewharton:butterknife:5.1.1'
+    //数据库ormlite
+    compile 'com.j256.ormlite:ormlite-core:4.48'
+    compile 'com.j256.ormlite:ormlite-android:4.48'
+    //greendao
+    compile 'org.greenrobot:greendao:3.2.2'
+    //这里还想加入realm，gradDao3(暂时先不加)
+    //gilde图片
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //首页轮播  使用步骤:https://github.com/youth5201314/banner
+    compile 'com.youth.banner:banner:1.4.9'
+    //适配库zhy
+    compile 'com.zhy:autolayout:1.4.3'
+    // 日志工具库
+//    compile 'com.apkfuns.logutils:library:1.4.2.2'
+    compile 'com.github.zhaokaiqiang.klog:library:1.6.0'
+    //okhttp3（打算改成okgo，暂时还未更改）
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    //gson
+    compile 'com.google.code.gson:gson:2.6.2'
+    //引导界面轮播  详细使用：https://github.com/bingoogolapple/BGABanner-Android#%E6%89%93%E8%B5%8F%E6%94%AF%E6%8C%81 (引导只支持本地图片)
+    compile 'com.android.support:support-v4:24.0.0'
+    compile 'cn.bingoogolapple:bga-banner:2.1.7@aar'
+    //ImagePicker Android自定义相册，完全仿微信UI，实现了拍照、图片选择（单选/多选）、 裁剪 、旋转、等功能
+    //原文链接 https://github.com/jeasonlzy/ImagePicker
+//    compile 'com.lzy.widget:imagepicker:0.6.0'  //指定版本   要支持25.3.1（擦，我这没有，暂时不弄）
+    compile 'com.github.chrisbanes.photoview:library:1.2.4'
+    compile 'com.github.reactivesprint:rsandroid-recyclerview:0.3.3'
+
+}
