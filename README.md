@@ -13,7 +13,7 @@ BruceCoreLib 整体介绍
 * 8.view                     常用的视图
 * 说明：使用见Explain类
 
-#bruce下一些基本如何使用介绍
+# bruce下一些基本如何使用介绍
 * 1.引导界面  [引导界面](https://github.com/bingoogolapple/BGABanner-Android#%E6%89%93%E8%B5%8F%E6%94%AF%E6%8C%81)
 * 2.banner 首页轮播  [首页轮播](https://github.com/youth5201314/banner)
 * 3.imagepick 选择图片  [选择图片](https://github.com/jeasonlzy/ImagePicker)
@@ -21,7 +21,7 @@ BruceCoreLib 整体介绍
 * 5.net    
         不足:数据库还要封装一下<br>
 
-##bruce 一些效果图 <br>
+# bruce 一些效果图 <br>
 引导页:<br>
 ![引导页1](https://github.com/weileng11/BruceTestDemo/blob/master/img/yd1.png)
 ![引导页2](https://github.com/weileng11/BruceTestDemo/blob/master/img/yd2.png)
