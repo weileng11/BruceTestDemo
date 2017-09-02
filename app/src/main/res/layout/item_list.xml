@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp">
+
+    <com.bruce.core.view.CircleImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@mipmap/ic_launcher"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/iv_avatar"
+        android:text="一个小豆包！"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:text="20121010"
+        android:layout_marginRight="10dp"
+        android:textSize="16sp" />
+
+    <!--<com.utils.view.RatingBar-->
+        <!--android:id="@+id/rb_count"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/tv_title"-->
+        <!--android:layout_toRightOf="@id/iv_avatar"-->
+        <!--app:starCount="5"-->
+        <!--app:starEmpty="@mipmap/rating_small_empty"-->
+        <!--app:starFill="@mipmap/rating_small_full"-->
+        <!--app:starHalf="@mipmap/rating_small_half"-->
+        <!--app:starImageSize="15dp"-->
+        <!--app:starPadding="4dp"-->
+        <!--app:starStep="2.5"-->
+        <!--app:stepSize="Half"-->
+        <!--/>-->
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginLeft="55dp"
+        android:text="具体内容"
+        android:textSize="16sp" />
+
+    <com.bruce.core.view.MyGridView
+        android:id="@+id/gridview"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/iv_avatar"
+        android:columnWidth="70dp"
+        android:gravity="center"
+        android:horizontalSpacing="2.5dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="2.5dp" />
+
+</RelativeLayout>

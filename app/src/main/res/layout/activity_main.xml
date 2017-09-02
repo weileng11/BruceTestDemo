@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.bruce.testdemo.MainActivity">
 
     <TextView
@@ -23,5 +24,25 @@
         android:background="@mipmap/ic_launcher"
         android:orientation="vertical"
         android:scaleType="centerCrop"/>
+
+    <Button
+        android:id="@+id/imagewatcher"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="测试仿微信的imagewatcher"
+        />
+    <Button
+    android:id="@+id/imagewatcher_photo"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:text="测试仿微信的wxphoto"
+    />
+
+    <Button
+        android:id="@+id/imagewatcher_photo_rv"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="测试仿微信的wxphotorv"
+        />
 
 </LinearLayout>

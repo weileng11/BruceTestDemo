@@ -12,6 +12,8 @@ BruceCoreLib 整体介绍
 * 7.utils                    常用的工具类，banner首页轮播图片
 * 8.view                     常用的视图
 * 9.updateapk                更新apk 一.dialog方式 二.notification方式
+* 10.imagewatcher             仿微信朋友圈功能，测试还没有成功，有可能要删除
+*  同时加入了不带rv的仿微信朋友圈和带rv仿微信朋友圈 详情见testdemo
 * 说明：使用见Explain类
 
 ## bruce下一些基本如何使用介绍
@@ -20,8 +22,9 @@ BruceCoreLib 整体介绍
 * 3.imagepick 选择图片  [选择图片](https://github.com/jeasonlzy/ImagePicker)
 * 4.database   暂时没有
 * 5.utils文件下的uploadhead上传头像封装  下载地址： [单个图片上传](https://github.com/wsy858/android-headimage-cliper)<br>
-* 6.updateapk 目录下dialog+nofication    更新Apk: [更新Apk](https://github.com/feicien/android-auto-update)<br>
+* 6.updateapk 目录下dialog+notification    更新Apk: [更新Apk](https://github.com/feicien/android-auto-update)<br>
 * RxJava方式更新apk  [RxJava方式更新apk](https://github.com/guoyoujin/MyUpdateApk)<br>
+* 7.ExpandableTextView [ExpandableTextView 文本展开](https://github.com/search?utf8=✓&q=ExpandableTextView&type=)<br>
         不足:数据库还要封装一下<br>
 
 ## bruce 一些效果图 <br>

@@ -19,6 +19,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".wxphoto.wxActivity"/>
+        <activity android:name=".wxphoto.ImagePagerActivity"/>
+
+        <activity android:name=".wxphotorecyclerview.WxRecyclerViewActivity"/>
+        <activity android:name=".wxphotorecyclerview.ImageShowActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/transparent"
+            />
+
+        <activity android:name=".imagewatcher.ImagewatcherAct"/>
+        <activity android:name=".imagewatcher.ImagewatcherAct2"/>
 
     </application>
 

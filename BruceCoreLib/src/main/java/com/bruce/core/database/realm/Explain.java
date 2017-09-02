@@ -78,7 +78,7 @@ public class Explain {
 //                Explian test2 = new Explian();
 //                test2.setMid(11);
 //                test2.setName("一座古城");
-//                RealmList<Test> tests=new RealmList<>();
+//                RealmList<ElseExplain> tests=new RealmList<>();
 //                tests.add(test2);
 //                user.setTest(tests);
 //                userDao.insert(user);
@@ -90,16 +90,16 @@ public class Explain {
 //
 //
 //                Log.d("flag", "插入小刺猬----" + userDao.getAllUser(new User()).toString());
-//                Log.d("flag", "一座古城----" + userDao.getAllUser(new Test()).toString());
+//                Log.d("flag", "一座古城----" + userDao.getAllUser(new ElseExplain()).toString());
 //
 //                for (int i = 0; i < 5; i++) {
 //                    userDao.insert(new User(i,"一座深林"+i,20+i));
 //                }
 //
 //                for (int i = 0; i < 5; i++) {
-//                    userDao.insert(new Test(i,"一座古城"+i));
+//                    userDao.insert(new ElseExplain(i,"一座古城"+i));
 //                }
-//                Log.d("flag","插入5个对象----"+userDao.getAllUser(new Test()).toString());
+//                Log.d("flag","插入5个对象----"+userDao.getAllUser(new ElseExplain()).toString());
 //                Log.d("flag","插入5个对象----"+userDao.getAllUser(new User()).toString());
 //                Log.d("flag","查询1----"+userDao.findByNameOrAge(new User(),"一座深林1",20));
 //                Log.d("flag","查询2----"+userDao.findByNameOrAge(new User(),"一座深林2",23));
@@ -113,7 +113,7 @@ public class Explain {
 //                userDao.deleteUser(new User(),0);//删除0
 ////            Log.d("flag","删除后查看----"+userDao.getAllUser().toString());
 //                Log.d("flag","平均年龄----"+userDao.selectMaxAverage(new User()));
-//                List<User> allUser = userDao.getAllUser(new Test());
+//                List<User> allUser = userDao.getAllUser(new ElseExplain());
 //                userDao.deleteData(new User(),3);
 //
 //                Log.d("flag","查询所有的数据----"+ allUser.size());

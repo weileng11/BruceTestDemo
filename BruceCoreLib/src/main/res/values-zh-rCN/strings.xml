@@ -1,0 +1,4 @@
+<resources>
+    <string name="to_expand_hint">[查看全部]</string>
+    <string name="to_shrink_hint">收起</string>
+</resources>

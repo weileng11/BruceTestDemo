@@ -22,4 +22,10 @@
     <string name="android_auto_update_toast_no_new_update">已经是最新版本</string>
     <string name="android_auto_update_download_progress">正在下载:%1$d%%</string>
     <string name="android_auto_update_dialog_checking">正在检查版本</string>
+
+    <!-- 文本点击展开更多-->
+    <string name="title_activity_main">ExpandableTextView</string>
+    <string name="title_activity_listview">ExpandableTextView in ListView</string>
+    <string name="to_expand_hint">Expand</string>
+    <string name="to_shrink_hint">Shrink</string>
 </resources>

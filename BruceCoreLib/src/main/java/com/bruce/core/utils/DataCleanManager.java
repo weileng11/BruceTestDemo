@@ -16,6 +16,18 @@ import java.math.BigDecimal;
  * * 描    述:  主要功能有清除内/外缓存，清除数据库，清除sharedPreference，清除files和清除自定义目录
  * */
 
+/**设置缓存的大小
+ *  try {
+ cacheSize = DataCleanManager.getTotalCacheSize(mContext);
+ } catch (Exception e) {
+ e.printStackTrace();
+ }
+ tvCacheSize.setText(cacheSize);
+ Log.i("INFO", "cacheSize大小" + cacheSize);
+
+ //清除缓存
+ DataCleanManager.clearAllCache(mContext);
+ */
 
 public class DataCleanManager {
     /**

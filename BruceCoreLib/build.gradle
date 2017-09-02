@@ -16,6 +16,13 @@ buildscript {
     }
 }
 
+////仿微信图片展示
+//allprojects {
+//    repositories {
+//        maven { url 'https://jitpack.io' }
+//    }
+//}
+
 //GreenDao3配置
 greendao {
     schemaVersion 1                             //版本号，升级时可配置
@@ -77,9 +84,12 @@ dependencies {
     //ImagePicker Android自定义相册，完全仿微信UI，实现了拍照、图片选择（单选/多选）、 裁剪 、旋转、等功能
     //原文链接 https://github.com/jeasonlzy/ImagePicker
 //    compile 'com.lzy.widget:imagepicker:0.6.0'  //指定版本   要支持25.3.1（擦，我这没有，暂时不弄）
-    compile 'com.github.chrisbanes.photoview:library:1.2.4'
+    compile 'com.github.chrisbanes.photoview:library:1.2.4' //包含放大的图片内容
     compile 'com.github.reactivesprint:rsandroid-recyclerview:0.3.3'
     //上传单张照片  https://github.com/Joy-Whale/ImageSelector  暂时没有用到
 //    compile 'cn.joy:imageselector:1.0.1'
+    //仿微信图片展示 https://github.com/MrWangChong/DragPhotoView 使用recyview，带动画
+    compile 'com.github.MrWangChong:DragPhotoView:1.1.0'
+
 
 }

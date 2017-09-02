@@ -5,10 +5,15 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import com.bruce.core.updateapk.dialog.UpdateAppManager;
 import com.bruce.core.utils.uploadhead.UploadHeadExplain;
+import com.bruce.testdemo.imagewatcher.ImagewatcherAct2;
+import com.bruce.testdemo.wxphoto.wxActivity;
+import com.bruce.testdemo.wxphotorecyclerview.WxRecyclerViewActivity;
 
 import butterknife.InjectView;
 import butterknife.OnClick;
@@ -21,7 +26,14 @@ public class MainActivity extends BaseActivity {
     ImageView image;
     int selectMode = 1;
     private static final int REQUEST_CODE = 10086;
+    @InjectView(R.id.imagewatcher)
+    Button imagewatcher;
+    @InjectView(R.id.imagewatcher_photo)
+    Button imagewatcherPhoto;
+    @InjectView(R.id.imagewatcher_photo_rv)
+    Button imagewatcherPhotoRv;
     private UpdateAppManager manager;
+
     /*
      * 初始化界面布局
      */
@@ -35,14 +47,14 @@ public class MainActivity extends BaseActivity {
      */
     @Override
     protected void initData() {
-        manager=new UpdateAppManager(this);
+        manager = new UpdateAppManager(this);
         manager.getUpdateMsg();//检查更新
     }
 
     @OnClick(R.id.image)
     public void onClick() {
         UploadHeadExplain.type = 2;
-        UploadHeadExplain.uploadHeadImage(MainActivity.this,R.layout.activity_main);
+        UploadHeadExplain.uploadHeadImage(MainActivity.this, R.layout.activity_main);
     }
 
     @Override
@@ -52,14 +64,14 @@ public class MainActivity extends BaseActivity {
                 if (resultCode == RESULT_OK) {
                     Log.d("evan", "**********camera uri*******" + Uri.fromFile(tempFile).toString());
                     Log.d("evan", "**********camera path*******" + UploadHeadExplain.getRealFilePathFromUri(MainActivity.this, Uri.fromFile(tempFile)));
-                    UploadHeadExplain.gotoClipActivity(Uri.fromFile(tempFile),MainActivity.this);
+                    UploadHeadExplain.gotoClipActivity(Uri.fromFile(tempFile), MainActivity.this);
                 }
                 break;
             case UploadHeadExplain.REQUEST_PICK:  //调用系统相册返回
                 if (resultCode == RESULT_OK) {
                     Uri uri = intent.getData();
                     Log.d("evan", "**********pick path*******" + UploadHeadExplain.getRealFilePathFromUri(MainActivity.this, uri));
-                    UploadHeadExplain.gotoClipActivity(uri,MainActivity.this);
+                    UploadHeadExplain.gotoClipActivity(uri, MainActivity.this);
                 }
                 break;
             case UploadHeadExplain.REQUEST_CROP_PHOTO:  //剪切图片返回
@@ -83,5 +95,20 @@ public class MainActivity extends BaseActivity {
         }
     }
 
+
+    @OnClick({R.id.imagewatcher, R.id.imagewatcher_photo,R.id.imagewatcher_photo_rv})
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.imagewatcher:
+                showActivity(this, ImagewatcherAct2.class);
+                break;
+            case R.id.imagewatcher_photo:
+                showActivity(this, wxActivity.class);
+                break;
+            case R.id.imagewatcher_photo_rv:
+                showActivity(this, WxRecyclerViewActivity.class);
+                break;
+        }
+    }
 
 }
