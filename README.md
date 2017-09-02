@@ -1,5 +1,21 @@
 # BruceCoreLib 基本封装库开始
-BruceCoreLib
+BruceCoreLib 使用
+```
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+
+```
+## 同时请加上<br>
+```
+dependencies {
+	        compile 'com.github.weileng11:BruceTestDemo:v1.0.0'
+	}
+
+```
 ====
 BruceCoreLib 整体介绍
 -------
