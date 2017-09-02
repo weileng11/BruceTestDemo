@@ -2,9 +2,9 @@
 BruceCoreLib 使用
 ```
 allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
+	repositories {
+		...
+		maven { url 'https://jitpack.io' }
 		}
 	}
 
@@ -12,7 +12,7 @@ allprojects {
 ## 同时请加上<br>
 ```
 dependencies {
-	        compile 'com.github.weileng11:BruceTestDemo:v1.0.0'
+	    compile 'com.github.weileng11:BruceTestDemo:v1.0.0'
 	}
 
 ```
