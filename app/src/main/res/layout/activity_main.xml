@@ -44,5 +44,10 @@
         android:layout_height="60dp"
         android:text="测试仿微信的wxphotorv"
         />
-
+    <Button
+        android:id="@+id/qq_index"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="测试QQ动态底部栏"
+        />
 </LinearLayout>

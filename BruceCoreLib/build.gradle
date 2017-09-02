@@ -90,6 +90,8 @@ dependencies {
 //    compile 'cn.joy:imageselector:1.0.1'
     //仿微信图片展示 https://github.com/MrWangChong/DragPhotoView 使用recyview，带动画
     compile 'com.github.MrWangChong:DragPhotoView:1.1.0'
+    //模仿手机QQ底部导航栏Icon拖拽效果  https://github.com/XingdongYu/QQNaviView
+//    compile 'com.github.XingdongYu:QQNaviView:v1.0.1'
 
 
 }

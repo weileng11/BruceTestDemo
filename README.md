@@ -38,6 +38,7 @@ BruceCoreLib 整体介绍
 * 3.imagepick 选择图片  [选择图片](https://github.com/jeasonlzy/ImagePicker)
 * 4.database   暂时没有
 * 5.utils文件下的uploadhead上传头像封装  下载地址： [单个图片上传](https://github.com/wsy858/android-headimage-cliper)<br>
+* utils qqnaviview 一个好看并且会动的底部栏  下载地址：[单个图片上传](https://github.com/XingdongYu/QQNaviView)<br>
 * 6.updateapk 目录下dialog+notification    更新Apk: [更新Apk](https://github.com/feicien/android-auto-update)<br>
 * RxJava方式更新apk  [RxJava方式更新apk](https://github.com/guoyoujin/MyUpdateApk)<br>
 * 7.ExpandableTextView [ExpandableTextView 文本展开](https://github.com/search?utf8=✓&q=ExpandableTextView&type=)<br>
