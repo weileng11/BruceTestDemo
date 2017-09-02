@@ -52,6 +52,7 @@ BruceCoreLib 整体介绍
 
 ## License
 
+
 ```
 Copyright 2017 trycatch
 
