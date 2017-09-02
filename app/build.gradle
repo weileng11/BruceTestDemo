@@ -28,4 +28,8 @@ dependencies {
 
 //    compile 'com.github.bumptech.glide:glide:4.0.0-RC1'
 //    compile 'ch.ielse:imagewatcher:1.0.3'
+
+//    compile 'com.github.XingdongYu:QQNaviView:v1.0.1'
+
+//    compile 'com.github.weileng11:BruceTestDemo:v1.0.0'
 }
