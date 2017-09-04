@@ -50,4 +50,10 @@
         android:layout_height="60dp"
         android:text="测试QQ动态底部栏"
         />
+    <Button
+        android:id="@+id/rv_sx"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="测试rv上啦下啦刷新"
+        />
 </LinearLayout>

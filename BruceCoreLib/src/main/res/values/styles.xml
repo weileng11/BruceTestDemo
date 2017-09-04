@@ -38,5 +38,31 @@
         <item name="android:windowExitAnimation">@anim/hide_to_bottom</item>
     </style>
 
+    //rv==================================//
+    <style name="AVLoadingIndicatorView">
+        <item name="minWidth">48dip</item>
+        <item name="maxWidth">48dip</item>
+        <item name="minHeight">48dip</item>
+        <item name="maxHeight">48dip</item>
+        <item name="indicatorName">LineSpinFadeLoaderIndicator</item>
+    </style>
+
+    <style name="AVLoadingIndicatorView.Large">
+        <item name="minWidth">72dip</item>
+        <item name="maxWidth">72dip</item>
+        <item name="minHeight">72dip</item>
+        <item name="maxHeight">72dip</item>
+        <item name="indicatorName">LineSpinFadeLoaderIndicator</item>
+    </style>
+
+    <style name="AVLoadingIndicatorView.Small">
+        <item name="minWidth">36dip</item>
+        <item name="maxWidth">36dip</item>
+        <item name="minHeight">36dip</item>
+        <item name="maxHeight">36dip</item>
+        <item name="indicatorName">LineSpinFadeLoaderIndicator</item>
+    </style>
+  //rv===============================//
+
 
 </resources>

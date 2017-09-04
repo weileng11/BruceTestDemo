@@ -1,6 +1,7 @@
 # BruceCoreLib 基本封装库开始
 BruceCoreLib 使用
 ```
+在app外层的build.gradle下:
 allprojects {
 	repositories {
 		...
@@ -11,6 +12,7 @@ allprojects {
 ```
 ## 同时请加上<br>
 ```
+在app层的build.gradle下:
 dependencies {
 	    compile 'com.github.weileng11:BruceTestDemo:v1.0.0'
 	}
@@ -30,6 +32,7 @@ BruceCoreLib 整体介绍
 * 9.updateapk                更新apk 一.dialog方式 二.notification方式
 * 10.imagewatcher             仿微信朋友圈功能，测试还没有成功，有可能要删除
 *  同时加入了不带rv的仿微信朋友圈和带rv仿微信朋友圈 详情见testdemo
+* 11.recyclerview             加入noanim_recyclerview不带动画目录下的上啦下拉刷新
 * 说明：使用见Explain类
 
 ## bruce下一些基本如何使用介绍
@@ -42,7 +45,16 @@ BruceCoreLib 整体介绍
 * 6.updateapk 目录下dialog+notification    更新Apk: [更新Apk](https://github.com/feicien/android-auto-update)<br>
 * RxJava方式更新apk  [RxJava方式更新apk](https://github.com/guoyoujin/MyUpdateApk)<br>
 * 7.ExpandableTextView [ExpandableTextView 文本展开](https://github.com/search?utf8=✓&q=ExpandableTextView&type=)<br>
+* 8.recyclerview  [recyclerview 不带动画](https://github.com/jdsjlzx/LRecyclerView)<br>
         不足:数据库还要封装一下<br>
+
+## v1.0.2 <br>
+bruce下一些基本如何使用介绍7项,加入utils qqnaviview <br>
+      加入不到动画各种方式实现的recyclerview上啦下拉刷新
+
+
+## v1.0.0 <br>
+bruce下一些基本如何使用介绍7项,不包括utils qqnaviview
 
 ## bruce 一些效果图 <br>
 引导页:<br>

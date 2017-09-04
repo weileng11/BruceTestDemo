@@ -24,8 +24,8 @@
 
     <color name="red_1">#f64c48</color>
 
-    <color name="colorPrimaryDark">#5DA49F</color>
-    <color name="colorPrimary">#6BBEB8</color>
+    <!--<color name="colorPrimaryDark">#5DA49F</color>-->
+    <!--<color name="colorPrimary">#6BBEB8</color>-->
 
    <!--图片相关-->
     <color name="ic_back_press">#323336</color>
@@ -37,4 +37,11 @@
     <color name="ip_color_accent">#1AAD19</color>
     <color name="ip_text_secondary_inverted">#66ffffff</color>
     <color name="ip_text_primary_inverted">#ffffff</color>
+
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FFB5B5B5</color>
+    <color name="cardview_light_background">#FFFFFFFF</color>
+    <color name="color_00">#8A000000</color>
+    <color name="split">#cccccc</color>
 </resources>

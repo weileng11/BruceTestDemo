@@ -55,6 +55,7 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:24.0.0'
+    compile 'com.android.support:design:24.0.0'
     testCompile 'junit:junit:4.12'
 
     //注入
@@ -92,6 +93,6 @@ dependencies {
     compile 'com.github.MrWangChong:DragPhotoView:1.1.0'
     //模仿手机QQ底部导航栏Icon拖拽效果  https://github.com/XingdongYu/QQNaviView
 //    compile 'com.github.XingdongYu:QQNaviView:v1.0.1'
-
-
+    //不带动画的recyckerview，地址：https://github.com/jdsjlzx/LRecyclerView (里面有很多各种各样的方式实现rv)
+//    compile 'com.github.jdsjlzx:LRecyclerView:1.4.3'
 }
