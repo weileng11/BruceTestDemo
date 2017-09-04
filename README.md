@@ -46,8 +46,7 @@ BruceCoreLib 整体介绍
 * 6.updateapk 目录下dialog+notification    更新Apk: [更新Apk](https://github.com/feicien/android-auto-update)<br>
 * RxJava方式更新apk  [RxJava方式更新apk](https://github.com/guoyoujin/MyUpdateApk)<br>
 * 7.ExpandableTextView [ExpandableTextView 文本展开](https://github.com/search?utf8=✓&q=ExpandableTextView&type=)<br>
-* 8.recyclerview  [recyclerview 不带动画](https://github.com/jdsjlzx/LRecyclerView)
-* [recyclerview 带动画](http://blog.csdn.net/u012551350/article/details/52026740)<br>
+* 8.recyclerview  [recyclerview 不带动画](https://github.com/jdsjlzx/LRecyclerView)  [recyclerview 带动画](http://blog.csdn.net/u012551350/article/details/52026740)<br>
         不足:数据库还要封装一下<br>
 
 ## v1.0.2 <br>
