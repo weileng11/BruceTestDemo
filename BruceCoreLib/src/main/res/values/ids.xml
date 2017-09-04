@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <item name="BaseQuickAdapter_viewholder_support" type="id"/>
+    <item name="BaseQuickAdapter_swiping_support" type="id"/>
+    <item name="BaseQuickAdapter_dragging_support" type="id"/>
+    <item name="BaseQuickAdapter_databinding_support" type="id"/>
+
     <item name="image_orientation" type="id"/>
     <item name="state_origin" type="id"/>
     <item name="state_default" type="id"/>
@@ -11,4 +17,6 @@
     <item name="state_touch_scale_rotate" type="id"/>
 
     <item name="view_image_watcher" type="id" />
+
+
 </resources>

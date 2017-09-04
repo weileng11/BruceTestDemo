@@ -54,6 +54,12 @@
         android:id="@+id/rv_sx"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:text="测试rv上啦下啦刷新"
+        android:text="测试不带动画rv上啦下啦刷新"
+        />
+    <Button
+        android:id="@+id/rv_anim_sx"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="测试带动画rv上啦下啦刷新"
         />
 </LinearLayout>

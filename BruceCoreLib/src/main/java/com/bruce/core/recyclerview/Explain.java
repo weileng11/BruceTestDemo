@@ -10,4 +10,6 @@ package com.bruce.core.recyclerview;
  */
 
 public class Explain {
+
+    //不带动画rv的详细请见：https://github.com/jdsjlzx/LRecyclerView
 }

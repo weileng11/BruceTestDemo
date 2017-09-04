@@ -7,7 +7,7 @@
     <uses-permission android:name="android.permission.VIBRATE" />
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/slient"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/slient"
         android:supportsRtl="true"
@@ -35,6 +35,10 @@
         <activity android:name=".imagewatcher.ImagewatcherAct2"/>
         <activity android:name=".QQ.QQBottomAct"/>
         <activity android:name=".recycleviewnoanim.CollapsingToolbarLayoutActivity"/>
+
+        <!-- 带动画的rv-->
+        <activity android:name=".recycleviewanim.PullToRefreshActivity"/>
+        <!-- 带动画的rv-->
     </application>
 
 </manifest>

@@ -13,6 +13,7 @@ import com.bruce.core.updateapk.dialog.UpdateAppManager;
 import com.bruce.core.utils.uploadhead.UploadHeadExplain;
 import com.bruce.testdemo.QQ.QQBottomAct;
 import com.bruce.testdemo.imagewatcher.ImagewatcherAct2;
+import com.bruce.testdemo.recycleviewanim.PullToRefreshActivity;
 import com.bruce.testdemo.recycleviewnoanim.CollapsingToolbarLayoutActivity;
 import com.bruce.testdemo.wxphoto.wxActivity;
 import com.bruce.testdemo.wxphotorecyclerview.WxRecyclerViewActivity;
@@ -38,6 +39,8 @@ public class MainActivity extends BaseActivity {
     Button qqIndex;
     @InjectView(R.id.rv_sx)
     Button rvSx;
+    @InjectView(R.id.rv_anim_sx)
+    Button rvAnimSx;
     private UpdateAppManager manager;
 
     /*
@@ -102,7 +105,7 @@ public class MainActivity extends BaseActivity {
     }
 
 
-    @OnClick({R.id.imagewatcher, R.id.imagewatcher_photo, R.id.imagewatcher_photo_rv, R.id.qq_index,R.id.rv_sx})
+    @OnClick({R.id.imagewatcher, R.id.imagewatcher_photo, R.id.imagewatcher_photo_rv, R.id.qq_index, R.id.rv_sx,R.id.rv_anim_sx})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.imagewatcher:
@@ -120,9 +123,11 @@ public class MainActivity extends BaseActivity {
             case R.id.rv_sx:
                 showActivity(this, CollapsingToolbarLayoutActivity.class);
                 break;
+            case R.id.rv_anim_sx:
+                showActivity(this, PullToRefreshActivity.class);
+                break;
         }
     }
-
 
 
 }
