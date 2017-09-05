@@ -16,50 +16,53 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
+    <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/image"
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@mipmap/ic_launcher"
         android:orientation="vertical"
-        android:scaleType="centerCrop"/>
+        android:scaleType="centerCrop" />
 
     <Button
         android:id="@+id/imagewatcher"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:text="测试仿微信的imagewatcher"
-        />
+        android:text="测试仿微信的imagewatcher" />
+
     <Button
-    android:id="@+id/imagewatcher_photo"
-    android:layout_width="match_parent"
-    android:layout_height="60dp"
-    android:text="测试仿微信的wxphoto"
-    />
+        android:id="@+id/imagewatcher_photo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="测试仿微信的wxphoto" />
 
     <Button
         android:id="@+id/imagewatcher_photo_rv"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:text="测试仿微信的wxphotorv"
-        />
+        android:text="测试仿微信的wxphotorv" />
+
     <Button
         android:id="@+id/qq_index"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:text="测试QQ动态底部栏"
-        />
+        android:text="测试QQ动态底部栏" />
+
     <Button
         android:id="@+id/rv_sx"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:text="测试不带动画rv上啦下啦刷新"
-        />
+        android:text="测试不带动画rv上啦下啦刷新" />
+
     <Button
         android:id="@+id/rv_anim_sx"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:text="测试带动画rv上啦下啦刷新"
-        />
+        android:text="测试带动画rv上啦下啦刷新" />
+
+    <Button
+        android:id="@+id/pagerslidingtastip"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="测试pagerslidingtabSttip" />
 </LinearLayout>

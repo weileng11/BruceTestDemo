@@ -39,6 +39,9 @@
         <!-- 带动画的rv-->
         <activity android:name=".recycleviewanim.PullToRefreshActivity"/>
         <!-- 带动画的rv-->
+        <!-- 带动画的rv-->
+        <activity android:name=".pagerslidingtabstrip.PagerSlidingtabStripActivity"/>
+        <!-- 带动画的rv-->
     </application>
 
 </manifest>

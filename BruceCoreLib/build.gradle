@@ -93,6 +93,8 @@ dependencies {
     compile 'com.github.MrWangChong:DragPhotoView:1.1.0'
     //模仿手机QQ底部导航栏Icon拖拽效果  https://github.com/XingdongYu/QQNaviView
 //    compile 'com.github.XingdongYu:QQNaviView:v1.0.1'
-    //不带动画的recyckerview，地址：https://github.com/jdsjlzx/LRecyclerView (里面有很多各种各样的方式实现rv)
+     //不带动画的recyckerview，地址：https://github.com/jdsjlzx/LRecyclerView (里面有很多各种各样的方式实现rv)
 //    compile 'com.github.jdsjlzx:LRecyclerView:1.4.3'
+    //带动画的recyckerview 地址:https://github.com/HpWens/WRecyclerView
+//    compile 'com.github.baserecycleradapter:library:1.1.0'
 }

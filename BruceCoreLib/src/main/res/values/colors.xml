@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="transparent">#00000000</color>
-
+    <color name="background_tab_pressed">#6633B5E5</color>
     <color name="blue_1">#0079c2</color>
 
     <color name="orange_1">#ff9600</color>
