@@ -1,5 +1,5 @@
 # BruceCoreLib 基本封装库开始
-BruceCoreLib 使用
+BruceCoreLib 使用 [![](https://jitpack.io/v/weileng11/BruceTestDemo.svg)](https://jitpack.io/#weileng11/BruceTestDemo)
 ```
 在app外层的build.gradle下:
 allprojects {
@@ -14,7 +14,7 @@ allprojects {
 ```
 在app层的build.gradle下:
 dependencies {
-	    compile 'com.github.weileng11:BruceTestDemo:v1.0.0'
+	     compile 'com.github.weileng11:BruceTestDemo:v1.0.2'
 	}
 
 ```
