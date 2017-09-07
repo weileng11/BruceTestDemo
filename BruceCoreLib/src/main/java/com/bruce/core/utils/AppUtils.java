@@ -21,6 +21,25 @@ public class AppUtils
 
 	}
 
+//	private static final Application  sApplication = null;
+//	static {
+//		Application  application=null;
+//		try {
+//			application= Reflect.on("android.app.AppGlobals").call("getinitialApplication").get();
+//
+//		}catch (Exception e){
+//
+//		}
+//		if(application==null){
+//			application= Reflect.on("android.app.ActivityThread").call("currentApplication").get();
+//		}
+//		sApplication=application;
+//	}
+//
+//	public  static Application getApplication(){
+//		return sApplication;
+//	}
+
 	/**
 	 * 获取应用程序名称
 	 */

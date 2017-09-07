@@ -24,6 +24,11 @@
         </provider>
         //截图
         <activity android:name="com.bruce.core.utils.uploadhead.ClipImageActivity"/>
+
+        <activity
+            android:name="com.bruce.core.imagewatcher.MNImageBrowserActivity"
+            android:theme="@style/ImageBrowserTheme" />
+
     </application>
 
 </manifest>

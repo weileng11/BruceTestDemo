@@ -36,7 +36,7 @@ public class SampleApplicationLike extends DefaultApplicationLike {
         super.onCreate();
         // 这里实现SDK初始化，appId替换成你的在Bugly平台申请的appId
         // 调试时，将第三个参数改为true
-        Bugly.init(getApplication(), "7f43e8e60e", false);
+        Bugly.init(getApplication(), "7f43e8e60e", true);
     }
 
 

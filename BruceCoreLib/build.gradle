@@ -98,4 +98,7 @@ dependencies {
 //    compile 'com.github.jdsjlzx:LRecyclerView:1.4.3'
     //带动画的recyckerview 地址:https://github.com/HpWens/WRecyclerView
 //    compile 'com.github.baserecycleradapter:library:1.1.0'
+
+//    compile 'com.github.maning0303:MNImageBrowser:V1.0.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
 }

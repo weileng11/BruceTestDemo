@@ -14,7 +14,7 @@ import com.bruce.core.updateapk.dialog.UpdateAppManager;
 import com.bruce.core.utils.uploadhead.UploadHeadExplain;
 import com.bruce.testdemo.QQ.QQBottomAct;
 import com.bruce.testdemo.bugly.BugLyTestClass;
-import com.bruce.testdemo.imagewatcher.ImagewatcherAct2;
+import com.bruce.testdemo.imagewatcher.ImagewatcherAct3;
 import com.bruce.testdemo.pagerslidingtabstrip.PagerSlidingtabStripActivity;
 import com.bruce.testdemo.recycleviewanim.PullToRefreshActivity;
 import com.bruce.testdemo.recycleviewnoanim.CollapsingToolbarLayoutActivity;
@@ -118,7 +118,7 @@ public class MainActivity extends BaseActivity {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.imagewatcher:
-                showActivity(this, ImagewatcherAct2.class);
+                showActivity(this, ImagewatcherAct3.class);
                 break;
             case R.id.imagewatcher_photo:
                 showActivity(this, wxActivity.class);

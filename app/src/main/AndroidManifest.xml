@@ -37,8 +37,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/transparent" />
 
-        <activity android:name=".imagewatcher.ImagewatcherAct" />
-        <activity android:name=".imagewatcher.ImagewatcherAct2" />
+        <activity android:name=".imagewatcher.ImagewatcherAct3" />
         <activity android:name=".QQ.QQBottomAct" />
         <activity android:name=".recycleviewnoanim.CollapsingToolbarLayoutActivity" />
 

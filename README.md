@@ -53,7 +53,7 @@ BruceCoreLib 整体介绍
 * 11.加入了bugly热更新，暂时还没有测试成功  [bugly 官网](https://beta.bugly.qq.com/apps/9b2ac86a27/hotfix?pid=1)<br>
         不足:数据库还要封装一下<br>
 
-## v1.0.2 <br>
+## v1.0.4 <br>
 1.加入bugly热更新功能，还没有测试成功
 
 
@@ -74,7 +74,8 @@ BruceCoreLib 整体介绍
 ![screenshot](https://github.com/weileng11/BruceTestDemo/blob/master/img/yd1.png)
 ![screenshot](https://github.com/weileng11/BruceTestDemo/blob/master/img/yd2.png)
 
-
+## 推荐文章<br>
+###  全部都是干货:[干货集中营](https://github.com/maning0303/GankMM)
 
 ## License
 
