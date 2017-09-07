@@ -65,4 +65,10 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:text="测试pagerslidingtabSttip" />
+
+    <Button
+        android:id="@+id/bugly"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="测试bugly热更新" />
 </LinearLayout>

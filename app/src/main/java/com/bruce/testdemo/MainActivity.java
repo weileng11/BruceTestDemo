@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -12,6 +13,7 @@ import android.widget.ImageView;
 import com.bruce.core.updateapk.dialog.UpdateAppManager;
 import com.bruce.core.utils.uploadhead.UploadHeadExplain;
 import com.bruce.testdemo.QQ.QQBottomAct;
+import com.bruce.testdemo.bugly.BugLyTestClass;
 import com.bruce.testdemo.imagewatcher.ImagewatcherAct2;
 import com.bruce.testdemo.pagerslidingtabstrip.PagerSlidingtabStripActivity;
 import com.bruce.testdemo.recycleviewanim.PullToRefreshActivity;
@@ -19,6 +21,7 @@ import com.bruce.testdemo.recycleviewnoanim.CollapsingToolbarLayoutActivity;
 import com.bruce.testdemo.wxphoto.wxActivity;
 import com.bruce.testdemo.wxphotorecyclerview.WxRecyclerViewActivity;
 
+import butterknife.ButterKnife;
 import butterknife.InjectView;
 import butterknife.OnClick;
 
@@ -42,6 +45,10 @@ public class MainActivity extends BaseActivity {
     Button rvSx;
     @InjectView(R.id.rv_anim_sx)
     Button rvAnimSx;
+    @InjectView(R.id.pagerslidingtastip)
+    Button pagerslidingtastip;
+    @InjectView(R.id.bugly)
+    Button bugly;
     private UpdateAppManager manager;
 
     /*
@@ -107,7 +114,7 @@ public class MainActivity extends BaseActivity {
 
 
     @OnClick({R.id.imagewatcher, R.id.imagewatcher_photo, R.id.imagewatcher_photo_rv,
-            R.id.qq_index, R.id.rv_sx,R.id.rv_anim_sx,R.id.pagerslidingtastip})
+            R.id.qq_index, R.id.rv_sx, R.id.rv_anim_sx, R.id.pagerslidingtastip, R.id.bugly})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.imagewatcher:
@@ -131,8 +138,17 @@ public class MainActivity extends BaseActivity {
             case R.id.pagerslidingtastip:
                 showActivity(this, PagerSlidingtabStripActivity.class);
                 break;
+            case R.id.bugly:
+                showActivity(this,BugLyTestClass.class);
+                break;
         }
     }
 
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        // TODO: add setContentView(...) invocation
+        ButterKnife.inject(this);
+    }
 }

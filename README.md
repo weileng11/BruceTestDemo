@@ -49,8 +49,14 @@ BruceCoreLib 整体介绍
 * 7.ExpandableTextView [ExpandableTextView 文本展开](https://github.com/search?utf8=✓&q=ExpandableTextView&type=)<br>
 * 8.recyclerview  [recyclerview 不带动画](https://github.com/jdsjlzx/LRecyclerView)  [recyclerview 带动画](http://blog.csdn.net/u012551350/article/details/52026740)<br>
 * 9.PullToRefreshView 基础上啦下拉刷新类 <br>
-* 10.加入PagerSlidingTabStrip fragment滑动  [ExpandableTextView 文本展开](https://github.com/search?utf8=✓&q=ExpandableTextView&type=)<br>
+* 10.加入PagerSlidingTabStrip fragment滑动  [PagerSlidingTabStrip 滑动](https://github.com/weileng11/PagerSlidingTabStrip)<br>
+* 11.加入了bugly热更新，暂时还没有测试成功  [bugly 官网](https://beta.bugly.qq.com/apps/9b2ac86a27/hotfix?pid=1)<br>
         不足:数据库还要封装一下<br>
+
+## v1.0.2 <br>
+1.加入bugly热更新功能，还没有测试成功
+
+
 
 ## v1.0.2 <br>
 1.bruce下基本如何使用介绍7项,加入utils qqnaviview <br>
