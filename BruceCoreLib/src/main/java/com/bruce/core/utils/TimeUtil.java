@@ -171,6 +171,7 @@ public class TimeUtil {
     public static String getTime(Date date) {
         return date == null ? "" : getTime(date.getTime());
     }
+
     /**获取时间,hh:mm:ss
      * @param date
      * @return
@@ -178,7 +179,6 @@ public class TimeUtil {
     public static String getTime(long date) {
         return new SimpleDateFormat("hh:mm:ss").format(new Date(date));
     }
-
 
 
     /**获取完整时间

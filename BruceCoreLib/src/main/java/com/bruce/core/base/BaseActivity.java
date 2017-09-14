@@ -33,6 +33,7 @@ public abstract class BaseActivity  extends AppCompatActivity{
         ActivityCollector.put(this);
         setContentView(getContentViewId());
         ButterKnife.inject(this);
+        initView(savedInstanceState);
         initData();
     }
 
@@ -40,6 +41,12 @@ public abstract class BaseActivity  extends AppCompatActivity{
      * 获取本activity的布局文件
      */
     protected abstract int getContentViewId();
+    /**
+     * 初始化View
+     *
+     * @param savedInstanceState aty销毁时保存的临时参数
+     */
+    protected abstract void initView(Bundle savedInstanceState);
     /**
      * 初始化界面数据
      */

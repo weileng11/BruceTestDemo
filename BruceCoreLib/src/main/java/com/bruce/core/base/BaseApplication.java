@@ -19,7 +19,7 @@ import com.socks.library.KLog;
  */
 
 public class BaseApplication extends Application {
-    public static BaseApplication baseApplicationContext = null;
+    private volatile static BaseApplication baseApplicationContext = null;
 
     @Override
     public void onCreate() {
@@ -29,6 +29,13 @@ public class BaseApplication extends Application {
     }
 
     public static BaseApplication getInstance() {
+        if(baseApplicationContext==null){
+            synchronized (BaseApplication.class){
+                if(baseApplicationContext==null){
+                    baseApplicationContext=new BaseApplication();
+                }
+            }
+        }
         return (BaseApplication) baseApplicationContext;
     }
 

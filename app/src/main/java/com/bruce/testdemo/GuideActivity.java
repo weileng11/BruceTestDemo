@@ -1,8 +1,12 @@
 package com.bruce.testdemo;
 
 import android.content.Intent;
+import android.widget.ImageView;
+
+import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import cn.bingoogolapple.bgabanner.BGABanner;
@@ -60,6 +64,25 @@ public class GuideActivity extends BaseActivity {
     public static List<String> titles = new ArrayList<>();
 
     private void processLogic() {
+
+        mBackgroundBanner.setAdapter(new BGABanner.Adapter<ImageView, String>() {
+            @Override
+            public void fillBannerItem(BGABanner banner, ImageView itemView, String model, int position) {
+                Glide.with(GuideActivity.this)
+                        .load(model)
+                        .placeholder(R.drawable.ic_arrow_back)
+//                        .error(R.drawable.holder)
+                        .centerCrop()
+                        .dontAnimate()
+                        .into(itemView);
+            }
+        });
+
+        mBackgroundBanner.setData(Arrays.asList(
+                "http://ww4.sinaimg.cn/large/006uZZy8jw1faic1xjab4j30ci08cjrv.jpg", "http://ww4.sinaimg.cn/large/006uZZy8jw1faic21363tj30ci08ct96.jpg"
+                        , "http://ww4.sinaimg.cn/large/006uZZy8jw1faic259ohaj30ci08c74r.jpg"),
+                Arrays.asList("提示文字1", "提示文字2", "提示文字3"));
+
 //       ///该数据只进行测试
 //        String[] urls = this.getResources().getStringArray(R.array.url);
 //        List list = Arrays.asList(urls);
@@ -80,7 +103,7 @@ public class GuideActivity extends BaseActivity {
 //
 //        mBackgroundBanner.setData(Arrays.asList(images.get(0),images.get(1)),Arrays.asList(titles.get(0),titles.get(1)));
         // 设置数据源
-        mBackgroundBanner.setData(R.drawable.uoko_guide_background_1, R.drawable.uoko_guide_background_2, R.drawable.uoko_guide_background_3);
+//        mBackgroundBanner.setData(R.drawable.uoko_guide_background_1, R.drawable.uoko_guide_background_2, R.drawable.uoko_guide_background_3);
 
         mForegroundBanner.setData(R.drawable.uoko_guide_foreground_1, R.drawable.uoko_guide_foreground_2, R.drawable.uoko_guide_foreground_3);
     }

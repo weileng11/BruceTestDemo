@@ -4,13 +4,14 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.bruce.core.updateapk.dialog.UpdateAppManager;
+import com.bruce.core.utils.banner.GlideImageLoader;
 import com.bruce.core.utils.uploadhead.UploadHeadExplain;
 import com.bruce.testdemo.QQ.QQBottomAct;
 import com.bruce.testdemo.bugly.BugLyTestClass;
@@ -20,8 +21,15 @@ import com.bruce.testdemo.recycleviewanim.PullToRefreshActivity;
 import com.bruce.testdemo.recycleviewnoanim.CollapsingToolbarLayoutActivity;
 import com.bruce.testdemo.wxphoto.wxActivity;
 import com.bruce.testdemo.wxphotorecyclerview.WxRecyclerViewActivity;
+import com.socks.library.KLog;
+import com.youth.banner.Banner;
+import com.youth.banner.BannerConfig;
+import com.youth.banner.listener.OnBannerListener;
 
-import butterknife.ButterKnife;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 import butterknife.InjectView;
 import butterknife.OnClick;
 
@@ -49,8 +57,11 @@ public class MainActivity extends BaseActivity {
     Button pagerslidingtastip;
     @InjectView(R.id.bugly)
     Button bugly;
+    @InjectView(R.id.banner)
+    Banner banner;
     private UpdateAppManager manager;
-
+    public static List<?> images = new ArrayList<>();
+    public static List<String> titles = new ArrayList<>();
     /*
      * 初始化界面布局
      */
@@ -66,6 +77,50 @@ public class MainActivity extends BaseActivity {
     protected void initData() {
         manager = new UpdateAppManager(this);
         manager.getUpdateMsg();//检查更新
+        //设置图片轮播
+        setBannerShow();
+        KLog.v("Logcat");
+        KLog.d("Logcat");
+        KLog.i("Logcat");
+        KLog.w("Logcat");
+        KLog.e("Logcat");
+        KLog.a("Logcat");
+//        KLog.json("");
+    }
+
+    /**
+     * 图片轮播
+     *
+     * @return
+     */
+    public void setBannerShow() {
+        //该数据只进行测试
+        String[] urls = this.getResources().getStringArray(R.array.url);
+        List list = Arrays.asList(urls);
+        images = new ArrayList(list);
+        String[] title = getResources().getStringArray(R.array.title);
+        List titlelist = Arrays.asList(title);
+        titles = new ArrayList(titlelist);
+
+        //设置banner样式
+        banner.setBannerStyle(BannerConfig.CIRCLE_INDICATOR_TITLE_INSIDE);
+        //设置图片加载器
+        banner.setImageLoader(new GlideImageLoader());
+        //设置图片集合
+        banner.setImages(images);
+        //设置标题集合（当banner样式有显示title时）
+        banner.setBannerTitles(titles);
+        //设置图片点击监听
+        banner.setOnBannerListener(new OnBannerListener() {
+            @Override
+            public void OnBannerClick(int position) {
+                Toast.makeText(MainActivity.this, "你点击了：" + position, Toast.LENGTH_SHORT).show();
+            }
+        });
+        //设置标题的颜色
+
+        //banner设置方法全部调用完毕时最后调用
+        banner.start();
     }
 
     @OnClick(R.id.image)
@@ -139,16 +194,9 @@ public class MainActivity extends BaseActivity {
                 showActivity(this, PagerSlidingtabStripActivity.class);
                 break;
             case R.id.bugly:
-                showActivity(this,BugLyTestClass.class);
+                showActivity(this, BugLyTestClass.class);
                 break;
         }
     }
 
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        // TODO: add setContentView(...) invocation
-        ButterKnife.inject(this);
-    }
 }

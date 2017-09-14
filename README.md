@@ -51,24 +51,30 @@ BruceCoreLib 整体介绍
 * 9.PullToRefreshView 基础上啦下拉刷新类 <br>
 * 10.加入PagerSlidingTabStrip fragment滑动  [PagerSlidingTabStrip 滑动](https://github.com/weileng11/PagerSlidingTabStrip)<br>
 * 11.加入了bugly热更新，暂时还没有测试成功  [bugly 官网](https://beta.bugly.qq.com/apps/9b2ac86a27/hotfix?pid=1)<br>
+* 12.加入内存泄漏  [内存泄漏](https://github.com/square/leakcanary)<br>
         不足:数据库还要封装一下<br>
 
 ## v1.0.4 <br>
+```
 1.加入bugly热更新功能，还没有测试成功
-
+2.加入Klog 打印日志
+3.加入内存泄漏
+```
 
 
 ## v1.0.2 <br>
+```
 1.bruce下基本如何使用介绍7项,加入utils qqnaviview <br>
 2.加入不带动画各种方式实现的recyclerview上啦下拉刷新 <br>
 3.加入带动画各种方式实现的recyclerview上啦下拉刷新 <br>
 4.PullToRefreshView 基础上啦下拉刷新类<br>
 5.加入PagerSlidingTabStrip fragment滑动 <br>
-
+```
 
 ## v1.0.0 <br>
+```
 1.bruce下基本如何使用介绍7项,不包括utils qqnaviview
-
+```
 ## bruce 一些效果图 <br>
 引导页:<br>
 ![screenshot](https://github.com/weileng11/BruceTestDemo/blob/master/img/yd1.png)
